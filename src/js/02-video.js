@@ -23,19 +23,3 @@ player.setCurrentTime(currentTime || 0).then(function(seconds) {
             break;
     }
 });
-
-
-player.setColor('#59c9b0').then(function (color) {
-    // the color that was set
-}).catch(function (error) {
-    // an error occurred setting the color
-});
-
-
-player.on('play', function() {
-    console.log('played the video!');
-});
-
-player.getVideoTitle().then(function(title) {
-    console.log('title:', title);
-});

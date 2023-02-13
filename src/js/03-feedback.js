@@ -26,35 +26,6 @@ function onFormSubmit(evt) {
     localStorage.removeItem("email");
     localStorage.removeItem("message");
 
-    // console.log(localStorage.getItem(LOCALSTORAGE_KEY));
     console.log(` email: ${form.elements.email.value}\n message: ${form.elements.message.value}` );
     evt.currentTarget.reset();
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const data = {};
-// const onFormSubmit = (evt) => {
-//     evt.preventDefault();
-//     const formData = new FormData(form);
-
-//     data.email = formData.get('email');
-//     data.message = formData.get('message');
-
-//     console.log(data);
-
-// }
-// form.addEventListener('submit', onFormSubmit);
-
