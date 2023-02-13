@@ -22,11 +22,9 @@ function handleFormInput(evt) {
 }
 function handleFormSubmit(evt) {
   evt.preventDefault();
-  localStorage.removeItem('email');
-  localStorage.removeItem('message');
-
   console.log(
     ` email: ${form.elements.email.value}\n message: ${form.elements.message.value}`
   );
   evt.currentTarget.reset();
+  localStorage.removeItem(LOCALSTORAGE_KEY);
 }
